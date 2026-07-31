@@ -28,7 +28,6 @@ Each round reuses the previous round's design or data — newest first.
 - [plagiarism-detection-ir](https://github.com/drkalexander1/plagiarism-detection-ir) — multi-signal (BM25 + SBERT + Jaccard) reuse detection, PAN 2011 benchmark
 - [sandhill-crane-migration-networks](https://github.com/drkalexander1/sandhill-crane-migration-networks) — max-flow min-cut migration bottlenecks over 3.2M observations
 - [ebird-species-prediction](https://github.com/drkalexander1/ebird-species-prediction) — collaborative-filtering and multi-task models over 13.6B observations (SLURM/HPC)
-- [career-ops-share](https://github.com/drkalexander1/career-ops-share) — AI job-search pipeline (Node + SQLite)
 
 ### 🧭 Background
 
