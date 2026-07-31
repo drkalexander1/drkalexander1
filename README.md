@@ -6,6 +6,30 @@ Researcher and data scientist working at the intersection of economics, data sci
 
 Running an ongoing weekly **LLM calibration & uncertainty evaluation program** — original evaluations of whether frontier models represent their own uncertainty, spanning probabilistic forecast calibration, interval calibration as question specificity decreases, and cross-level belief consistency. Scored with proper scoring rules (CRPS, log loss, pinball), ECE, and ground-truth-free self-consistency checks; power-analyzed rather than anecdotal (effect sizes, scenarios-needed-for-80%-power, multiple-comparison caveats). Across three rounds to date: frontier models stay overconfident on rare/underspecified cases, and self-reported confidence is largely uninformative.
 
+### 📊 The eval program
+
+An ongoing weekly program on whether LLMs can represent their own uncertainty.
+Each round reuses the previous round's design or data — newest first.
+
+| Round | Eval | Question | Builds on |
+|---|---|---|---|
+| **R6–R7** | [llm-anchoring-evals](https://github.com/drkalexander1/llm-anchoring-evals) | Does an irrelevant anchor shift a model's estimate *and* its stated interval? | R3 taxon substrate |
+| **R5** | [eval-meta-consistency](https://github.com/drkalexander1/eval-meta-consistency) | In a fresh context, does a model know where its own uncertainty is highest? | R3 p10/p50/p90 CIs |
+| **R3** | [bird-taxonomy-evals](https://github.com/drkalexander1/bird-taxonomy-evals) | Are independent beliefs about genus/family/order mutually coherent? | R1 species domain |
+| **R2** | [florida-weather-evals](https://github.com/drkalexander1/florida-weather-evals) | Do intervals widen as questions get less specific? (*known* unknowns) | R1 design |
+| **R1** | [michigan-bird-evals](https://github.com/drkalexander1/michigan-bird-evals) | Probabilistic calibration against eBird ground truth (*unknown* unknowns) | — |
+
+**Side branch (R4)** — same harness, different question: model output quality and judge bias rather than uncertainty.
+[Haiku-evals](https://github.com/drkalexander1/Haiku-evals) (5-7-5 form + subject grounding via embedding similarity) →
+[haiku-judge-evals](https://github.com/drkalexander1/haiku-judge-evals) (blind pairwise judging — does a model pick its own haiku more often than an independent judge would?)
+
+### 🗂️ Other work
+
+- [plagiarism-detection-ir](https://github.com/drkalexander1/plagiarism-detection-ir) — multi-signal (BM25 + SBERT + Jaccard) reuse detection, PAN 2011 benchmark
+- [sandhill-crane-migration-networks](https://github.com/drkalexander1/sandhill-crane-migration-networks) — max-flow min-cut migration bottlenecks over 3.2M observations
+- [ebird-species-prediction](https://github.com/drkalexander1/ebird-species-prediction) — collaborative-filtering and multi-task models over 13.6B observations (SLURM/HPC)
+- [career-ops-share](https://github.com/drkalexander1/career-ops-share) — AI job-search pipeline (Node + SQLite)
+
 ### 🧭 Background
 
 - **Research integrity & reproducibility** — independent statistical replications and forensic data analysis at Cornell supporting institutional research-integrity investigations; co-launched a cross-disciplinary reproducibility initiative, independently reproducing 15+ peer-reviewed studies across economics, sociology, communication, and veterinary medicine; presented methodology at IASSIST 2019.
