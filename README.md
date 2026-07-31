@@ -20,7 +20,7 @@ Each round reuses the previous round's design or data — newest first.
 | **R1** | [michigan-bird-evals](https://github.com/drkalexander1/michigan-bird-evals) | Probabilistic calibration against eBird ground truth (*unknown* unknowns) | — |
 
 **Side branch (R4)** — same harness, different question: model output quality and judge bias rather than uncertainty.
-[Haiku-evals](https://github.com/drkalexander1/Haiku-evals) (5-7-5 form + subject grounding via embedding similarity) →
+[haiku-evals](https://github.com/drkalexander1/haiku-evals) (5-7-5 form + subject grounding via embedding similarity) →
 [haiku-judge-evals](https://github.com/drkalexander1/haiku-judge-evals) (blind pairwise judging — does a model pick its own haiku more often than an independent judge would?)
 
 ### 🗂️ Other work
